@@ -1,3 +1,71 @@
-.someClass {
-
+.wrapper {
+    margin: 50px;
+    max-width: 300px;
 }
+
+.item {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.item span {
+    color: cornflowerblue;
+}
+
+p {
+    margin: 0;
+}
+
+.name {
+    flex-basis: 30%;
+}
+
+.low {
+    color: gray;
+}
+
+.middle {
+    color: blue;
+}
+
+.high {
+    color: red;
+}
+
+.cmn_btn {
+    padding: 8px;
+    margin: 10px;
+
+    border: 1px solid #565252;
+    border-radius: 5px;
+
+    color: #413535;
+    cursor: pointer;
+}
+
+.cmn_btn:hover {
+    background: #fafafa;
+}
+
+.btn_delete {
+    background: red;
+
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid darkred;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+.btn_delete:hover {
+    top: 2px;
+}
+
+

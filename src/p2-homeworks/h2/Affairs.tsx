@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {Dispatch} from 'react'
 import Affair from './Affair'
-import {AffairType} from './HW2'
+import {AffairType, filterAffairs, FilterType} from './HW2'
+import style from './Affairs.module.css';
 
 type AffairsPropsType = { // need to fix any
-    data: any
-    setFilter: any
+    data: Array<AffairType>
+    setFilter: Dispatch<React.SetStateAction<FilterType>>
     deleteAffairCallback: any
 }
 
@@ -17,20 +18,20 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => {} // need to fix
-    const setHigh = () => {}
-    const setMiddle = () => {}
-    const setLow = () => {}
+    const setAll = (filter: FilterType) => {props.setFilter(filter)} // need to fix
+    const setHigh = (filter: FilterType) => {props.setFilter(filter)}
+    const setMiddle = (filter: FilterType) => {props.setFilter(filter)}
+    const setLow = (filter: FilterType) => {props.setFilter(filter)}
 
     return (
-        <div>
+        <div className={style.wrapper}>
 
             {mappedAffairs}
 
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
+            <button className={style.cmn_btn} onClick={() => setAll('all')}>All</button>
+            <button className={style.cmn_btn} onClick={() => setHigh('high')}>High</button>
+            <button className={style.cmn_btn} onClick={() => setMiddle('middle')}>Middle</button>
+            <button className={style.cmn_btn} onClick={() => setLow('low')}>Low</button>
         </div>
     )
 }
