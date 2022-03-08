@@ -18,10 +18,10 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = (filter: FilterType) => {props.setFilter(filter)} // need to fix
-    const setHigh = (filter: FilterType) => {props.setFilter(filter)}
-    const setMiddle = (filter: FilterType) => {props.setFilter(filter)}
-    const setLow = (filter: FilterType) => {props.setFilter(filter)}
+    const setAll = (filter: FilterType) => {props.setFilter(filter)} // fixes
+    const setHigh = (filter: FilterType) => {props.setFilter(filter)} // fixed
+    const setMiddle = (filter: FilterType) => {props.setFilter(filter)} // fixed
+    const setLow = (filter: FilterType) => {props.setFilter(filter)} // fixed
 
     return (
         <div className={style.wrapper}>
@@ -29,9 +29,9 @@ function Affairs(props: AffairsPropsType) {
             {mappedAffairs}
 
             <button className={style.cmn_btn} onClick={() => setAll('all')}>All</button>
-            <button className={style.cmn_btn} onClick={() => setHigh('high')}>High</button>
-            <button className={style.cmn_btn} onClick={() => setMiddle('middle')}>Middle</button>
-            <button className={style.cmn_btn} onClick={() => setLow('low')}>Low</button>
+            <button className={`${style.cmn_btn} ${style.high}`} onClick={() => setHigh('high')}>High</button>
+            <button className={`${style.cmn_btn} ${style.middle}`} onClick={() => setMiddle('middle')}>Middle</button>
+            <button className={`${style.cmn_btn} ${style.low}`} onClick={() => setLow('low')}>Low</button>
         </div>
     )
 }
