@@ -5,8 +5,9 @@ import style from './Affairs.module.css';
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
-    setFilter: Dispatch<React.SetStateAction<FilterType>>
-    deleteAffairCallback: (id:number) => void
+    // setFilter: Dispatch<React.SetStateAction<FilterType>>
+    deleteAffairCallback: (id:number) => void,
+    setFilter: (filter: FilterType)=> void
 }
 
 function Affairs(props: AffairsPropsType) {

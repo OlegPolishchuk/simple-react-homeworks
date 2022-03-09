@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Affairs from './Affairs'
 
 // types
-export type AffairPriorityType = 'all' | 'high' | 'low' | 'middle'
+export type AffairPriorityType = 'high' | 'low' | 'middle'
 export type FilterType = 'all' | AffairPriorityType
 
 export type AffairType = {
