@@ -19,6 +19,10 @@ function HW4() {
     const [checked, setChecked] = useState<boolean>(false)
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
+    // const addTask = (e: ChangeEvent<HTMLInputElement>) => {
+    //     console.log(e.currentTarget.value)
+    // }
+
     return (
         <div>
             <hr/>
@@ -31,6 +35,7 @@ function HW4() {
                     onEnter={showAlert}
                     error={error}
                     // spanClassName={s.testSpanError}
+                    // onChange={addTask}
                 />
 
                 <SuperInputText
