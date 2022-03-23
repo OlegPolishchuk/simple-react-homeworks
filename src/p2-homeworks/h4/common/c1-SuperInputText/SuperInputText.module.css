@@ -7,10 +7,13 @@
 }
 
 input {
+    padding: 7px 0;
     color: #333;
     letter-spacing: 1px;
     box-sizing: border-box;
 
+    outline: none;
+    border: none
 }
 
 input:focus {
