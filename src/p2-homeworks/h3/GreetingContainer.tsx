@@ -35,7 +35,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
                 setError('')
             }
         } else {
-            setError('Error ! Name should consist at least 1 letter')
+            setError('Error ! Name should consist of at least 1 letter')
         }
     }
 
