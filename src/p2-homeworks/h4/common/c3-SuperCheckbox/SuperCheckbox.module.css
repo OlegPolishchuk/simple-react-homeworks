@@ -1,7 +1,42 @@
+.label {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
 .checkbox {
+    appearance: none;
+    background-color: #fff;
 
+    margin-right: 8px;
+    padding: 0;
+
+    font: inherit;
+    color: currentColor;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2ea44f;
+    border-radius: 2px;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+
+    cursor: pointer;
 }
 
-.spanClassName {
-
+.checkbox::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #2ea44f;
 }
+
+.checkbox:checked::before {
+    transform: scale(1);
+}
+
+

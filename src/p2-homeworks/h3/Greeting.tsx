@@ -16,7 +16,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
 ) => {
 
-    const inputClass = error.length !== 0 ? s.error : ''// fixed
+    // const inputClass = error.length !== 0 ? s.error : ''// fixed
 
     return (
         <div className={s.wrapper}>
