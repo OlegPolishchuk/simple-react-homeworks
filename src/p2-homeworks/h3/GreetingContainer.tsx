@@ -23,20 +23,18 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const totalUsers = users.length // fixed
     const addUser = () => {
 
-        const regExp = /\s/gi
+        const trimmedName = name.trim();
         // сделать валидацию
-        if (name !== '') {
-            if (regExp.test(name)) {
-                setError('Error! Name cant consist of spase')
-                setName('')
-            } else {
-                addUserCallback(name);
-                setName('')
-                setError('')
-            }
+
+        if (trimmedName === '') {
+            setError('Error! Name should be!')
+            setName('')
         } else {
-            setError('Error ! Name should consist of at least 1 letter')
+            addUserCallback(name);
+            setName('')
+            setError('')
         }
+
     }
 
     return (

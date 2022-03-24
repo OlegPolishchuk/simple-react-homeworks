@@ -1,5 +1,6 @@
 .wrapper {
     margin: 30px 0 0 50px;
+    /*display: flex;*/
 }
 
 .error {
@@ -12,12 +13,12 @@
     border: 1px solid green;
 }
 
-.wrapper input {
-    padding: 8px;
+/*.wrapper input {*/
+/*    padding: 8px;*/
 
-    border-radius: 3px;
-    border: 1px solid #5e5d5d;
-}
+/*    border-radius: 3px;*/
+/*    border: 1px solid #5e5d5d;*/
+/*}*/
 
 .error_wrapper {
     display: block;
@@ -36,4 +37,8 @@
 
 .btn_add:hover {
     background: #c1fd5b;
+}
+
+.total_users {
+    margin-left: 15px;
 }
