@@ -21,7 +21,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     return (
         <div className={s.wrapper}>
             {/*<input value={name} onChange={(e) => setNameCallback(e)} className={inputClass}/>*/}
-            <SuperInputText value={name} onChange={setNameCallback} error={error}/>
+            <SuperInputText value={name} onChange={setNameCallback} error={error} onEnter={addUser}/>
             {/*<button onClick={addUser} className={s.btn_add}>add</button>*/}
             <SuperButton onClick={addUser}>Add</SuperButton>
             <span className={s.total_users}>{totalUsers}</span>
