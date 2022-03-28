@@ -2,15 +2,17 @@ import React, {Dispatch} from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import style from './Affairs.module.css';
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
-    // setFilter: Dispatch<React.SetStateAction<FilterType>>
     deleteAffairCallback: (id:number) => void,
     setFilter: (filter: FilterType)=> void
+    filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
+    const {filter} = props;
     const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair // should work
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
@@ -29,10 +31,26 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <button className={style.cmn_btn} onClick={() => setAll('all')}>All</button>
-            <button className={`${style.cmn_btn} ${style.high}`} onClick={() => setHigh('high')}>High</button>
-            <button className={`${style.cmn_btn} ${style.middle}`} onClick={() => setMiddle('middle')}>Middle</button>
-            <button className={`${style.cmn_btn} ${style.low}`} onClick={() => setLow('low')}>Low</button>
+            <SuperButton
+                className={`${style.cmn_btn} ${filter === 'all' ? style.active : ''}`}
+                onClick={() => setAll('all')}
+            > All
+            </SuperButton>
+            <SuperButton
+                className={`${style.cmn_btn} ${style.high} ${filter === 'high' ? style.active: ''}`}
+                onClick={() => setHigh('high')}
+            >High
+            </SuperButton>
+            <SuperButton
+                className={`${style.cmn_btn} ${style.middle} ${filter === 'middle' ? style.active : ''}`}
+                onClick={() => setMiddle('middle')}
+            >Middle
+            </SuperButton>
+            <SuperButton
+                className={`${style.cmn_btn} ${style.low} ${filter === 'low' ? style.active : ''}`}
+                onClick={() => setLow('low')}
+            >Low
+            </SuperButton>
         </div>
     )
 }

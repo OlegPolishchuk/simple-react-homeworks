@@ -49,6 +49,11 @@ p {
     background: #fafafa;
 }
 
+.cmn_btn.active {
+    background: #fafafa;
+    box-shadow: 1px 1px 8px rgba(0,0,0,.5);
+}
+
 .btn_delete {
     background: red;
 
