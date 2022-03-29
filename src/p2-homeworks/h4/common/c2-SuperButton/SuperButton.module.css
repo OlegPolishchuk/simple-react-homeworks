@@ -19,75 +19,7 @@
     background: #dc4f4f;
 }
 
-/*//////////////////*/
 
-/* CSS */
-/*.default {*/
-/*    display: inline-flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    vertical-align: baseline;*/
-
-/*    margin: 0;*/
-/*    !*padding: 0 32px;*!*/
-/*    padding: 7px 10px;*/
-
-/*    box-sizing: border-box;*/
-/*    border-radius: 3px;*/
-/*    border-width: 0;*/
-
-/*    background-color: initial;*/
-/*    background-image: linear-gradient(#464d55, #25292e);*/
-/*    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);*/
-
-/*    font-family: expo-brand-demi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
-/*    font-size: 16px;*/
-/*    justify-content: center;*/
-/*    line-height: 1;*/
-/*    color: #fff;*/
-
-
-/*    text-align: center;*/
-/*    text-decoration: none;*/
-
-/*    outline: none;*/
-/*    overflow: hidden;*/
-
-/*    transform: translate3d(0, 0, 0);*/
-/*    transition: all 150ms;*/
-/*    white-space: nowrap;*/
-
-/*    cursor: pointer;*/
-/*}*/
-
-/*.default:hover {*/
-/*    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;*/
-/*    opacity: .85;*/
-/*}*/
-
-/*.default:active {*/
-/*    outline: 0;*/
-/*}*/
-
-/*.default:focus {*/
-/*    box-shadow: rgba(0, 0, 0, .5) 0 0 0 1px;*/
-/*}*/
-
-/*@media (max-width: 420px) {*/
-/*    .default {*/
-/*        height: 48px;*/
-/*    }*/
-/*}*/
-
-/*.default:disabled {*/
-/*    opacity: .4;*/
-/*}*/
-
-
-/* nice button too*/
-
-
-/* CSS */
 .default {
     appearance: none;
     background-color: #2ea44f;

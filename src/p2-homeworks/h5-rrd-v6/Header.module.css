@@ -1,0 +1,17 @@
+.header_nav {
+    display: flex;
+}
+
+.header_nav a {
+    margin-right: 20px;
+    color: #282c34;
+    text-decoration: none;
+}
+
+.header_nav a:hover {
+    color: #fa5b21;
+}
+
+.header_nav .active {
+    color: #fa5b21;
+}

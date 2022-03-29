@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+##Simple react tasks
+
+https://OlegPolishchuk.github.io/simple-react-homeworks
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

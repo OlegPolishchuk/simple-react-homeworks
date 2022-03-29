@@ -1,4 +1,4 @@
-import React, {Dispatch} from 'react'
+import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import style from './Affairs.module.css';
