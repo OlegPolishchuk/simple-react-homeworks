@@ -65,57 +65,6 @@ input:focus {
     transition: 0.4s;
 }
 
-/*.superInput~ .focus_border:before,*/
-/*.superInput~ .focus_border:after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 0;*/
-/*    height: 2px;*/
-/*    background-color: #4caf50;*/
-/*    transition: .3s;*/
-/*}*/
-
-/*.superInput~ .focus_border:after {*/
-/*    top: auto;*/
-/*    bottom: 0;*/
-/*    left: auto;*/
-/*    right: 0;*/
-/*}*/
-
-/*.superInput~ .focus_border i:before,*/
-/*.superInput~ .focus_border i:after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 2px;*/
-/*    height: 0;*/
-/*    background-color: #4caf50;*/
-/*    transition: .4s;*/
-/*}*/
-
-/*.superInput~ .focus_border i:after {*/
-/*    left: auto;*/
-/*    right: 0;*/
-/*    top: auto;*/
-/*    bottom: 0;*/
-/*}*/
-
-/*.superInput:focus~ .focus_border:before,*/
-/*.superInput:focus~ .focus_border:after {*/
-/*    width: 100%;*/
-/*    transition: .3s;*/
-/*}*/
-
-/*.superInput:focus~ .focus_border i:before,*/
-/*.superInput:focus~ .focus_border i:after {*/
-/*    height: 100%;*/
-/*    transition: .4s;*/
-/*}*/
-
-
 /*////////////////////////////*/
 .error {
     color: red;

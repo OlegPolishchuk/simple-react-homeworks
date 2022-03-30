@@ -9,7 +9,9 @@ function App() {
             {/*<HW2/>*/}
             {/*<HW3/>*/}
             {/*<HW4/>*/}
-            <HW5/>
+            <div className={s.main_wrapper}>
+                <HW5/>
+            </div>
 
         </div>
     )

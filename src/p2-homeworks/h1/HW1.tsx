@@ -11,7 +11,7 @@ const messageData = {
 
 function HW1() {
     return (
-        <div>
+        <div className={'main_wrapper'}>
             <hr/>
             homeworks 1
 

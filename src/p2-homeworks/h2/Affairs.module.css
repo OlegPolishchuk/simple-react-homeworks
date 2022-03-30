@@ -71,4 +71,11 @@ p {
     top: 2px;
 }
 
+@media screen and (max-width: 500px){
+    .wrapper {
+        margin: 50px auto;
+        width: 100%;
+    }
+}
+
 
