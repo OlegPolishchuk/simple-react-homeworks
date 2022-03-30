@@ -1,5 +1,7 @@
 .header_nav {
     display: flex;
+    align-items: flex-start;
+    /*position: relative;*/
 }
 
 .header_nav a {
@@ -15,3 +17,17 @@
 .header_nav .active {
     color: #fa5b21;
 }
+
+.nav_wrapper {
+    display: flex;
+
+    /*position: relative;*/
+    /*left: -280px;*/
+
+    transform: translate(-70%);
+}
+
+.show_links {
+    transform: translate(0);
+}
+
