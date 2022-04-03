@@ -19,21 +19,21 @@ function Header() {
                     to={'/pre-junior'}
                     className={({isActive}) => isActive ? s.active : ''}
                 >
-                    <h3>PreJunior</h3>
+                    <h3 onClick={toggleLinks}>PreJunior</h3>
                 </NavLink>
                 <NavLink
                     to={'/junior'}
                     className={({isActive}) => isActive ? s.active : ''}
                 >
-                    <h3>Junior</h3>
+                    <h3 onClick={toggleLinks}>Junior</h3>
                 </NavLink>
                 <NavLink
                     to={'/junior+'}
                     className={({isActive}) => isActive ? s.active : ''}
                 >
-                    <h3>Junior+</h3>
+                    <h3 onClick={toggleLinks}>Junior+</h3>
                 </NavLink>
-                <ToggleBtn  toggle={toggleLinks}/>
+                <ToggleBtn  toggle={toggleLinks} wrapped={toggle}/>
             </div>
         </nav>
     )
