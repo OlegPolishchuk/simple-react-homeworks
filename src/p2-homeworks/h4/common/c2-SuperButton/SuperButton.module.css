@@ -43,6 +43,8 @@
     touch-action: manipulation;
     vertical-align: middle;
     white-space: nowrap;
+
+    transition: all .2s ease-in;
 }
 
 .default:focus:not(:focus-visible):not(.focus-visible) {
@@ -69,4 +71,17 @@
 .default:active {
     background-color: #298e46;
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.white {
+    padding: 8px 15px;
+    border: 1px solid #333333;
+
+    background: #fff;
+    color: #333333;
+    font-weight: bold;
+}
+
+.white:hover {
+    background: #ececec;
 }
