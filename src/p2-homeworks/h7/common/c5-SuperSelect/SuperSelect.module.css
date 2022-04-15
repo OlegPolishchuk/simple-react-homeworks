@@ -139,5 +139,10 @@
     }
 }
 
+.checked {
+    background: rgba(1,161,1,.3);
+}
+
+
 
 
