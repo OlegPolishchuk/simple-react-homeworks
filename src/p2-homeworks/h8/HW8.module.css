@@ -19,8 +19,8 @@
 }
 
 
-.user_item:last-child {
-    border-radius: 0 0 5px 5px;
+.user_item:first-child {
+    border-radius: 5px 5px 0 0;
 }
 
 .user_item:nth-child(even) {
