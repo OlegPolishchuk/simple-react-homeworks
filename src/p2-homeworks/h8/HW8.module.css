@@ -1,0 +1,51 @@
+.users_wrapper {
+    border: 1px solid #333333;
+    border-radius: 5px;
+
+    max-width: 400px;
+    margin: 50px 0;
+}
+
+.user_item {
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_item {
+    color: #282c34;
+    font-size: 18px;
+}
+
+
+.user_item:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.user_item:nth-child(even) {
+    background: #ededed;
+}
+.user_item:nth-child(odd) {
+    background: #fdfdfd;
+}
+
+.user_item  span {
+    color: #04399f;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.controls {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 0 0 5px 5px;
+
+    background: #fff;
+}
+
+/*.name_wrapper {*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*}*/

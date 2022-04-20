@@ -1,13 +1,8 @@
 import React from 'react'
-import {homeWorkReducer} from '../homeWorkReducer'
+import {checkUserAgeAC, homeWorkReducer, sortUsersAC} from '../homeWorkReducer'
+import {UserType} from "../../HW8";
 
-type StateItemType = {
-    _id: number
-    name: string
-    age: number
-}
-
-let initialState: StateItemType[]
+let initialState: UserType[]
 
 
 beforeEach(() => {
@@ -22,7 +17,7 @@ beforeEach(() => {
 })
 
 test('sort name up', () => {
-    const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'up'})
+    const newState = homeWorkReducer(initialState, sortUsersAC('UP'))
 
     const sortedState = [...newState].sort((a,b) => {
         return a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1
@@ -34,24 +29,27 @@ test('sort name up', () => {
     expect(newState[0].name).toBe(sortedState[0].name)
     expect(newState === initialState).toBe(false)
 })
+
+
 test('sort name down', () => {
-    const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
+    const newState = homeWorkReducer(initialState, sortUsersAC('DOWN'))
 
     const sortedState = [...newState].sort((a,b) => {
         return a.name < b.name ? 1 : -1
     })
 
     expect(newState[0].name).toBe(sortedState[0].name)
-    expect(newState[5]).toBe('Кот')
+    expect(newState[5].name).toBe('Александр')
     expect(newState === initialState).toBe(false)
 })
 
+
 test('check age 18', () => {
-    const newState = homeWorkReducer(initialState, {type: 'check', payload: 18})
+    const newState = homeWorkReducer(initialState, checkUserAgeAC(18))
 
     const sortedState = [...newState].filter(el => el.age >= 18)
 
-    const findMin = (arr: StateItemType[]) => {
+    const findMin = (arr: UserType[]) => {
 
         let ageProperties =  arr.map(el => el.age)
 
