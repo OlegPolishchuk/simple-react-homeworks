@@ -1,7 +1,14 @@
 import React from 'react'
 import {homeWorkReducer} from '../homeWorkReducer'
 
-let initialState: any[] // need to fix any
+type StateItemType = {
+    _id: number
+    name: string
+    age: number
+}
+
+let initialState: StateItemType[]
+
 
 beforeEach(() => {
     initialState = [
@@ -17,16 +24,40 @@ beforeEach(() => {
 test('sort name up', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'up'})
 
+    const sortedState = [...newState].sort((a,b) => {
+        return a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1
+    })
+
     console.log(newState)
-    // expect(...).toBe(...)
+
+    expect(newState[0].name).toBe('Александр')
+    expect(newState[0].name).toBe(sortedState[0].name)
+    expect(newState === initialState).toBe(false)
 })
 test('sort name down', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
 
+    const sortedState = [...newState].sort((a,b) => {
+        return a.name < b.name ? 1 : -1
+    })
 
+    expect(newState[0].name).toBe(sortedState[0].name)
+    expect(newState[5]).toBe('Кот')
+    expect(newState === initialState).toBe(false)
 })
+
 test('check age 18', () => {
     const newState = homeWorkReducer(initialState, {type: 'check', payload: 18})
 
+    const sortedState = [...newState].filter(el => el.age >= 18)
 
+    const findMin = (arr: StateItemType[]) => {
+
+        let ageProperties =  arr.map(el => el.age)
+
+        return Math.min.apply(null, ageProperties)
+    }
+
+    expect(newState.length).toBe(4)
+    expect(findMin(sortedState)).toBe(40)
 })
