@@ -76,12 +76,33 @@
 .white {
     padding: 8px 15px;
     border: 1px solid #333333;
+    border-radius: 6px;
 
     background: #fff;
     color: #333333;
     font-weight: bold;
+
+    cursor: pointer;
+    transition: all .2s ease-in;
 }
 
 .white:hover {
     background: #ececec;
+}
+
+.purple {
+    padding: 8px 15px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+
+    background: #8c0bf3;
+    color: #fff;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.purple:hover {
+    background: #ab52f1;
 }

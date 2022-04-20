@@ -45,8 +45,8 @@ function HW8() {
                 {finalPeople}
                 <div className={s.controls}>
                     <SuperButton onClick={sortUp}>sort up</SuperButton>
-                    <SuperButton onClick={sortDown} className={'white'}>sort down</SuperButton>
-                    <SuperButton onClick={checkUsersAge} red>check 18</SuperButton>
+                    <SuperButton onClick={sortDown} variant={'white'}>sort down</SuperButton>
+                    <SuperButton onClick={checkUsersAge} variant={'purple'}>check 18</SuperButton>
                 </div>
             </div>
 
