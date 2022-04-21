@@ -42,7 +42,9 @@ function HW8() {
             homeworks 8
 
             <div className={s.users_wrapper}>
-                {finalPeople}
+                <div>
+                    {finalPeople}
+                </div>
                 <div className={s.controls}>
                     <SuperButton onClick={sortUp}>sort up</SuperButton>
                     <SuperButton onClick={sortDown} variant={'white'}>sort down</SuperButton>
