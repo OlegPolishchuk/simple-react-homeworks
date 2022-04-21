@@ -16,30 +16,30 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
         ...restProps// все остальные пропсы попадут в объект restProps, там же будет children
     }
 ) => {
-    let finalClassName;
+    let btnVariant;
     switch (variant) {
         case 'white':
-            finalClassName = s.white
+            btnVariant = s.white
             break
         case 'red':
-            finalClassName = s.red
+            btnVariant = s.red
             break
         case 'purple':
-            finalClassName = s.purple
+            btnVariant = s.purple
             break
         case 'outline':
-            finalClassName = s.outline
+            btnVariant = s.outline
             break
         default:
-            finalClassName = s.default
+            btnVariant = s.default
     }
 
     // const finalClassName = `${red ? s.red : className? className : s.default}`
-    finalClassName = className ? ' ' + className : ''
+    const finalClassName = className ? className : s.default
 
     return (
         <button
-            className={red ? s.red : finalClassName}
+            className={red ? s.red : variant ? btnVariant : className ? className : finalClassName}
             {...restProps} // отдаём кнопке остальные пропсы если они есть (children там внутри)
         />
     )
