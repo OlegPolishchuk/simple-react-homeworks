@@ -3,7 +3,7 @@ import s from './SuperButton.module.css'
 
 // тип пропсов обычной кнопки, children в котором храниться название кнопки там уже описан
 type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
-type VariantType = 'red' | 'white' | 'purple'
+type VariantType = 'red' | 'white' | 'purple' | 'outline'
 type SuperButtonPropsType = DefaultButtonPropsType & {
     red?: boolean,
     variant? : VariantType
@@ -27,11 +27,15 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
         case 'purple':
             finalClassName = s.purple
             break
+        case 'outline':
+            finalClassName = s.outline
+            break
         default:
             finalClassName = s.default
     }
 
     // const finalClassName = `${red ? s.red : className? className : s.default}`
+    finalClassName = className ? ' ' + className : ''
 
     return (
         <button

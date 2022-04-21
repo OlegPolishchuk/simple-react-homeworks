@@ -106,3 +106,12 @@
 .purple:hover {
     background: #ab52f1;
 }
+
+.outline {
+    border: none;
+    color: #333333;
+}
+
+.outline:hover {
+    text-decoration: underline;
+}
