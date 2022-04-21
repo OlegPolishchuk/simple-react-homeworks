@@ -29,28 +29,32 @@ function Affairs(props: AffairsPropsType) {
     return (
         <div className={style.wrapper}>
 
-            {mappedAffairs}
+            <div>
+                {mappedAffairs}
+            </div>
 
-            <SuperButton
-                className={`${style.cmn_btn} ${filter === 'all' ? style.active : ''}`}
-                onClick={() => setAll('all')}
-            > All
-            </SuperButton>
-            <SuperButton
-                className={`${style.cmn_btn} ${style.high} ${filter === 'high' ? style.active: ''}`}
-                onClick={() => setHigh('high')}
-            >High
-            </SuperButton>
-            <SuperButton
-                className={`${style.cmn_btn} ${style.middle} ${filter === 'middle' ? style.active : ''}`}
-                onClick={() => setMiddle('middle')}
-            >Middle
-            </SuperButton>
-            <SuperButton
-                className={`${style.cmn_btn} ${style.low} ${filter === 'low' ? style.active : ''}`}
-                onClick={() => setLow('low')}
-            >Low
-            </SuperButton>
+            <div className={style.controls}>
+                <SuperButton
+                    className={`${style.cmn_btn} ${filter === 'all' ? style.active : ''}`}
+                    onClick={() => setAll('all')}
+                > All
+                </SuperButton>
+                <SuperButton
+                    className={`${style.cmn_btn} ${style.high} ${filter === 'high' ? style.active: ''}`}
+                    onClick={() => setHigh('high')}
+                >High
+                </SuperButton>
+                <SuperButton
+                    className={`${style.cmn_btn} ${style.middle} ${filter === 'middle' ? style.active : ''}`}
+                    onClick={() => setMiddle('middle')}
+                >Middle
+                </SuperButton>
+                <SuperButton
+                    className={`${style.cmn_btn} ${style.low} ${filter === 'low' ? style.active : ''}`}
+                    onClick={() => setLow('low')}
+                >Low
+                </SuperButton>
+            </div>
         </div>
     )
 }

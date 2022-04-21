@@ -1,6 +1,18 @@
 .wrapper {
     margin: 50px;
     max-width: 300px;
+
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .item {
