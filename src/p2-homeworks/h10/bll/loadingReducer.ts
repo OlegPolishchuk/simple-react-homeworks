@@ -1,14 +1,34 @@
-const initState = {
-
+export enum LoadingReducerActionsTypeEnum {
+    TOGGLE_IS_LOADING = 'TOGGLE_IS_LOADING',
 }
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+const initState = {
+    isLoading: false
+}
+
+export type InitialStateType = typeof initState
+
+export const loadingReducer = (state = initState, action: LoadingACType): InitialStateType => {
     switch (action.type) {
-        case '': {
+        case LoadingReducerActionsTypeEnum.TOGGLE_IS_LOADING:
+            return {
+                ...state,
+                ...action.payload
+            }
+        default:
             return state
-        }
-        default: return state
     }
 }
 
-export const loadingAC = (): any => {} // fix any
+
+export type LoadingACType = {
+    type: LoadingReducerActionsTypeEnum.TOGGLE_IS_LOADING,
+    payload: { isLoading: boolean }
+}
+
+export const loadingAC = (isLoading: boolean): LoadingACType => {
+    return {
+        type: LoadingReducerActionsTypeEnum.TOGGLE_IS_LOADING,
+        payload: {isLoading}
+    }
+}

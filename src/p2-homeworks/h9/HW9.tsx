@@ -9,7 +9,6 @@ function HW9() {
 
             <Clock/>
 
-            <hr/>
         </div>
     )
 }
