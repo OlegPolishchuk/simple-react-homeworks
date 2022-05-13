@@ -40,3 +40,42 @@
 .container {
   padding: 50px;
 }
+
+/*superDoubleRange style*/
+.thumb {
+  background: #fff;
+  color: #333;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #eeeded;
+  border-radius: 50%;
+
+  top: -13px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.disabledTrack {
+  cursor: not-allowed;
+}
+
+.track {
+  height: 3px;
+}
+
+.track-0 {
+  background: #9df116;
+}
+
+.track-1 {
+  background: #333;
+}
+
+.track-2 {
+  background: red;
+}
+
+/******************************/

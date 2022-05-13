@@ -15,6 +15,8 @@ function HW10() {
         alignItems: 'center'
     }
 
+
+
     const setLoading = () => {
 
         dispatch(loadingAC(true))
