@@ -16,12 +16,18 @@ function HW11() {
         marginTop: '50px',
         maxWidth: '90%'
     }
+    const styleForSuperRange = {
+        ...style,
+        display: 'flex',
+        justifyContent: 'space-between',
+        maxWidth: '200px'
+    }
 
     return (
         <div className={'container'}>
             <hr/>
             homeworks 11
-            <div style={style}>
+            <div style={styleForSuperRange}>
                 <span>{value1}</span>
                 <SuperRange
                     value={value1}
