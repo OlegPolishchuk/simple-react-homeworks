@@ -1,3 +1,11 @@
+.wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* themes */
 .dark {
     background: dimgrey;
 }
@@ -21,3 +29,13 @@
 .some-text {
     color: darkslateblue;
 }
+
+.default {
+    background: #fff;
+}
+
+.default-text {
+    color: #333333;
+}
+
+/**/

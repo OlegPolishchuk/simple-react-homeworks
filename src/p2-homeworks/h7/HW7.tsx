@@ -25,13 +25,10 @@ function HW7() {
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
+                    row
                 />
             </div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperSelect/>*/}
-            {/*<AlternativeSuperRadio/>*/}
             <hr/>
         </div>
     )
