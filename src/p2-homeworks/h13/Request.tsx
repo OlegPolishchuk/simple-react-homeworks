@@ -1,21 +1,30 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 import SuperCheckbox from "../h4/common/c3-SuperCheckbox/SuperCheckbox";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
-import {requestAPI} from "./RequestAPI";
+import {useAppDispatch, useAppSelector} from "../../hooks/hooks";
+import {toggleIsSuccess} from "./bll/requestResucer";
 
 const Request = () => {
 
+    const dispatch = useAppDispatch()
+    const isSuccess = useAppSelector(state => state.request.isSuccess)
+
     const onClickHandler = () => {
-        requestAPI.postRequest()
-            .then(res => console.log(res))
-            .catch(err => console.log(err))
+
+    }
+
+    const onChangeCheckboxHandler = (e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(toggleIsSuccess(e.currentTarget.checked))
     }
 
     return (
         <div>
             <hr/>
             <h1>Request</h1>
-            <SuperCheckbox/>
+            <SuperCheckbox
+                checked={isSuccess}
+                onChange={onChangeCheckboxHandler}
+            />
             <SuperButton variant={"purple"}
                          onClick={onClickHandler}
             >

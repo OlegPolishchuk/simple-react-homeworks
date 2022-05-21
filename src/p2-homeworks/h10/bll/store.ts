@@ -1,7 +1,6 @@
 import {loadingReducer} from './loadingReducer'
 import {combineReducers, legacy_createStore as createStore} from "redux";
 import {themeReducer} from "../../h12/bll/themeReducer";
-import { ThunkAction } from 'redux-thunk';
 import {requestReducer} from "../../h13/bll/requestResucer";
 
 const reducers = combineReducers({
