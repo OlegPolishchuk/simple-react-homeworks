@@ -1,0 +1,16 @@
+.wrapper {
+    padding: 15px;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper > div {
+    min-width: 200px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
