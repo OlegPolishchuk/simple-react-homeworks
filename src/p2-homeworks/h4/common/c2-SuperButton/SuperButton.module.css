@@ -15,6 +15,10 @@
     transition: .2s;
 }
 
+.red:disabled {
+    cursor: not-allowed;
+}
+
 .red:hover {
     background: #dc4f4f;
 }
@@ -65,7 +69,7 @@
     background-color: #94d3a2;
     border-color: rgba(27, 31, 35, .1);
     color: rgba(255, 255, 255, .8);
-    cursor: default;
+    cursor: not-allowed;
 }
 
 .default:active {
@@ -86,6 +90,10 @@
     transition: all .2s ease-in;
 }
 
+.white:disabled {
+    cursor: not-allowed;
+}
+
 .white:hover {
     background: #ececec;
 }
@@ -103,6 +111,10 @@
     transition: all .2s ease-in;
 }
 
+.purple:disabled {
+    cursor: not-allowed;
+}
+
 .purple:hover {
     background: #ab52f1;
 }
@@ -110,6 +122,10 @@
 .outline {
     border: none;
     color: #333333;
+}
+
+.outline:disabled {
+    cursor: not-allowed;
 }
 
 .outline:hover {

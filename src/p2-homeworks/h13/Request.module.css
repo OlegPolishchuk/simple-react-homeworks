@@ -1,16 +1,42 @@
 .wrapper {
     padding: 15px;
-    min-height: 100px;
+    min-height: 170px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.wrapper > div {
-    min-width: 200px;
-
+.controls {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+
+    min-height: 150px;
+    min-width: 250px;
+}
+
+.checkBox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.checkBox span {
+    margin-left: 15px;
+}
+
+pre {
+    width: 100%
+}
+
+.response > p {
+    color: #6628a9
+}
+
+.response span {
+    color: #333333;
+}
+
+.response span.responseNumber {
+    color: #3677A8
 }
