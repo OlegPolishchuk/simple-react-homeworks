@@ -1,0 +1,28 @@
+.input:focus {
+}
+
+.input {
+    color: orange
+}
+
+.inputWrapper {
+}
+
+.superInput {
+    box-sizing: border-box;
+
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+}
+
+.errorInput {
+    border: 3px solid lime;
+    background: yellow;
+}
+
+.errorInput:focus {
+}
+
+.error {
+    color:red
+}

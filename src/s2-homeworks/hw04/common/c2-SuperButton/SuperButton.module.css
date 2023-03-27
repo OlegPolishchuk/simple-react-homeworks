@@ -1,0 +1,96 @@
+.button {
+    overflow: hidden;
+    cursor:pointer
+}
+
+.disabled {
+    background-color: violet;
+}
+
+.secondary {
+}
+
+.default {
+    background-color: lightskyblue;
+}
+
+.red {
+    background: pink;
+}
+
+.default:hover {
+    background-color: navy;
+}
+
+.red:hover {
+    background-color: red;
+}
+
+.secondary:hover {
+   background-color: gold
+}
+
+
+.default:active {
+/*    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;*/
+    padding: 5px 24px;
+    gap: 10px;
+
+    width: 149px;
+    height: 30px;
+
+    background: #0059B3;
+    border-radius: 3px;
+}
+
+.secondary:active {
+    width: 101px;
+    height: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #0066CC;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.red:active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+
+    width: 149px;
+    height: 30px;
+
+    background: #B31232;
+    border-radius: 3px;
+}
+
+.button:disabled {
+    width: 85px;
+    height: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #002E5C;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
