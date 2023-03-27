@@ -6,7 +6,6 @@ import {thunkMakePostRequest, toggleIsSuccess} from "./bll/requestResucer";
 import s from './Request.module.css'
 
 const Request = () => {
-
     const dispatch = useAppDispatch()
     const isSuccess = useAppSelector(state => state.request.isSuccess)
     const response = useAppSelector(state => state.request.response)
