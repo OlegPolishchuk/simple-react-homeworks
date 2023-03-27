@@ -16,7 +16,7 @@ export const ToggleBtn: React.FC<ToggleBtnPropsType> = ({toggle, ...props}) => {
     }
 
     return (
-        <div className={s.menu_bar} onClick={onClickHandler}>
+        <div className={s.menu_bar} onClick={onClickHandler} id={'hw5-burger-menu'}>
             <div className={`${s.bar} ${s.bar1} ${props.wrapped ? s.change : ''}`}> </div>
             <div className={`${s.bar} ${s.bar2} ${props.wrapped ? s.change : ''}`}> </div>
             <div className={`${s.bar} ${s.bar3} ${props.wrapped ? s.change : ''}`}> </div>

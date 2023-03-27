@@ -33,7 +33,7 @@ function Header() {
                 >
                     <h3 onClick={toggleLinks}>Junior+</h3>
                 </NavLink>
-                <ToggleBtn  toggle={toggleLinks} wrapped={toggle}/>
+                <ToggleBtn toggle={toggleLinks} wrapped={toggle}/>
             </div>
         </nav>
     )

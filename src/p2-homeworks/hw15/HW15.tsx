@@ -52,6 +52,7 @@ const HW15 = () => {
     setLoading(true)
     getTechs(params)
       .then((res) => {
+        console.log(res)
         if (res) {
           setTechs(res.data.techs)
         }
