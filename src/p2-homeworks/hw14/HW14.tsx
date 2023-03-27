@@ -34,6 +34,7 @@ const HW14 = () => {
         setLoading(true)
         getTechs(value)
             .then((res) => {
+              console.log(res)
               if (res) {
                 setTechs(res.data.techs)
               }
@@ -64,7 +65,8 @@ const HW14 = () => {
     ))
 
     return (
-        <div id={'hw14'}>
+        <div id={'hw14'} className={'container'}>
+          < hr />
             <div className={s2.hwTitle}>Homework #14</div>
 
             <div className={s2.hw}>

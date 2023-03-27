@@ -102,7 +102,8 @@ const HW15 = () => {
   ))
 
   return (
-    <div id={'hw15'}>
+    <div id={'hw15'} className={'container'}>
+      <hr />
       <div className={s2.hwTitle}>Homework #15</div>
 
       <div className={s2.hw}>
